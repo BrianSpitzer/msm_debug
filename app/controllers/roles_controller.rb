@@ -34,7 +34,7 @@ class RolesController < ApplicationController
 
     @role.save
 
-    render("show")
+    redirect_to("/roles/"+@role.id.to_s)
   end
 
   def destroy
